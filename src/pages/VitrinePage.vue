@@ -6,16 +6,16 @@
     const msg = ref(null)
 
     fetch('/dados.json')
-    .then(resp => resp.json())
-    .then(data => produtos.value = data)
-    .catch(err => msg.value = err)
+        .then(resp => resp.json())
+        .then(data => produtos.value = data)
+        .catch(err => msg.value = err)
 
     const sendMsg = () => {
-    msg.value = "Produto já adicionado."
+        msg.value = "Produto já adicionado."
     }
 
     watch(msg, (newMsg) => {
-    if (newMsg) setTimeout(() => msg.value = null, 2000)
+        if (newMsg) setTimeout(() => msg.value = null, 2000)
     })
 </script>
 

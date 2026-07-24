@@ -34,8 +34,6 @@
   </div>
 </template>
 
-
-
 <style scoped>
 /* ===== MENU SUPERIOR ===== */
 .main.menu {
